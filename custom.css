@@ -1,0 +1,286 @@
+body {
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    line-height: 1.5;
+    transition: linear left 0.1s;
+    background-color: #fefefd;
+    color: #808080;
+}
+
+h1 {
+    margin-top: 5px;
+    text-shadow: 1px 1px 3em #848474;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4 {
+    color: #505050;
+}
+
+h2:after {
+    content: ' ';
+}
+
+h5 {
+    font-weight: bold;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    display: none;
+    position: absolute;
+    margin-left: 8px;
+}
+
+hr {
+    margin: 0; width: 55%
+}
+
+p, strong, small, code {
+    word-break: break-word !important;
+}
+
+IMG {
+    max-width: 100%;
+}
+.markdown {
+    max-width: 610px;
+    display: inline-block;
+}
+.markdown pre, .doc pre {
+    border-radius: 3px;
+    border: 1px solid #e6e6e6;
+}
+.markdown *[class*="hljs"], .doc code[class*="hljs"], .doc pre *[class*="hljs"] {
+    background-color: #FAFAFA;
+    color: #808080;
+}
+
+
+h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
+    color: #a5a5a5;
+    display: initial;
+}
+
+.col-md-12 {
+    padding-left: 2em;
+}
+
+.nav.nav-tabs > li > a {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.tab-content {
+    padding-top: 8px;
+}
+
+table {
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
+td {
+    padding: 5px;
+}
+tr:nth-child(even) {
+    background-color : rgba(0, 0, 0, 0.05);
+}
+
+.clear {
+    clear:both;
+}
+
+
+table pre {
+    max-width: 600px;
+}
+pre {
+    max-width: 610px;
+    border-radius: 0px;
+    border: none;
+}
+
+pre code {
+    margin: -9.5px;
+    font-family: "Courier", sans-serif;
+
+}
+
+#doc-general-notes {
+    font-weight: normal;
+}
+.request {
+    margin-top: 50px;
+    margin-bottom: 24px;
+}
+
+.endpoints-group {
+    margin-top: 100px;
+}
+.response-text-sample {
+    padding: 0px !important;
+}
+
+.response-text-sample pre {
+    margin-bottom: 0px;
+}
+
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 250px;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #404044;
+    padding-top: 20px;
+}
+
+#sidebar-wrapper ul {
+    width: 260px;
+    list-style: none;
+}
+
+#sidebar-wrapper ul li {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#sidebar-wrapper ul li a:hover {
+    background: inherit;
+    text-decoration: none;
+}
+
+#sidebar-wrapper ul li a {
+    display: block;
+    color: #b3b3b3; // #ECF0F1;
+    padding: 6px 15px;
+}
+
+#sidebar-wrapper .icon {
+    color:#b3b3b3;
+}
+
+#sidebar-wrapper .glyphicon-collapse-up {
+    display: none;
+}
+
+#sidebar-wrapper .active .glyphicon-collapse-down {
+    display: none;
+}
+
+#sidebar-wrapper ul li ul {
+    padding-left: 25px;
+}
+
+#sidebar-wrapper ul li ul li {
+    font-weight: normal;
+    font-size: 90%;
+}
+
+#sidebar-wrapper ul li ul li a {
+    padding: 1px 0px;
+}
+
+#sidebar-wrapper ul li a:hover,
+#sidebar-wrapper ul li a:focus {
+    color: #efefef;
+    border-right: solid 1px #efefef;
+}
+
+#sidebar-wrapper ul li.active > a {
+    color: #efefef;
+    border-right: solid 3px #efefef;
+}
+
+#sidebar-wrapper .active .glyphicon-collapse-up {
+    color: #efefef;
+    display: inline-block;
+}
+
+#sidebar-wrapper ul li:not(.active) ul {
+    display: none;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+@media (min-width:768px) {
+    #page-content-wrapper {
+        padding-left:250px;
+    }
+}
+
+.markdown H3,  .markdown H2, .markdown H1 {
+    text-transform: uppercase;
+    font-size: 100%;
+}
+
+.panel-body, .tab-content {
+    padding: 0px;
+}
+
+.panel-dark {
+    background-color: #222;
+    border-color: #444;
+}
+
+.panel-dark > .panel-heading {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #444;
+    padding: 4px 8px;
+}
+
+.markdown pre, .doc pre {
+    margin: 0px;
+    min-height: 50px;
+    max-height: 250px;
+}
+
+pre:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width:768px) {
+    .splitted {
+        background: linear-gradient(90deg, transparent 65%, #3c3c33 35%);
+    }
+}
+
+.main-title {
+    white-space: normal;
+    display: inline-block;
+}
+
+.GET {
+  color: #3eb63e; }
+
+.POST {
+  color: #f5a623; }
+
+.PATCH {
+  color: #666666; }
+
+.PUT {
+  color: #4a90e2; }
+
+.DELETE {
+  color: #ed4b48; }
+
+
+.no-padding  {
+      padding-left: 0 !important;
+}
+
+a.method-toggle {
+    color: white;
+}
